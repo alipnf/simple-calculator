@@ -22,7 +22,7 @@ operator.forEach((element) => {
   element.addEventListener("click", () => {
     const lastChar = result.slice(-1);
     if (result !== "") {
-      if (!"+-*/".includes(lastChar)) {
+      if (!"+-*/%".includes(lastChar)) {
         result += element.value;
         display.value = result;
         display.scrollLeft = display.scrollWidth;
