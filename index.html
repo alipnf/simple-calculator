@@ -9,95 +9,34 @@
   <body>
     <div class="container">
       <h1>Kalkulator</h1>
-      <input type="text" readonly />
+      <input type="text" id="display" readonly />
       <div class="card">
-        <button type="button" onclick="AC()" class="operator">AC</button>
-        <button type="button" onclick="DC()" class="operator">DC</button>
-        <button
-          type="button"
-          value="%"
-          onclick="tambahoperator(this.value)"
-          class="operator"
-        >
-          %
-        </button>
-        <button
-          type="button"
-          value="/"
-          onclick="tambahoperator(this.value)"
-          class="operator"
-        >
-          /
-        </button>
+        <button type="button" class="operator clear">AC</button>
+        <button type="button" class="operator delete">DC</button>
+        <button type="button" value="%" class="operator">%</button>
+        <button type="button" value="/" class="operator">/</button>
 
-        <button type="button" value="7" onclick="tambahAngka(this.value)">
-          7
-        </button>
-        <button type="button" value="8" onclick="tambahAngka(this.value)">
-          8
-        </button>
-        <button type="button" value="9" onclick="tambahAngka(this.value)">
-          9
-        </button>
-        <button
-          type="button"
-          value="*"
-          onclick="tambahoperator(this.value)"
-          class="operator"
-        >
-          *
-        </button>
+        <button type="button" value="7" class="number">7</button>
+        <button type="button" value="8" class="number">8</button>
+        <button type="button" value="9" class="number">9</button>
+        <button type="button" value="*" class="operator">*</button>
 
-        <button type="button" value="4" onclick="tambahAngka(this.value)">
-          4
-        </button>
-        <button type="button" value="5" onclick="tambahAngka(this.value)">
-          5
-        </button>
-        <button type="button" value="6" onclick="tambahAngka(this.value)">
-          6
-        </button>
-        <button
-          type="button"
-          value="-"
-          onclick="tambahoperator(this.value)"
-          class="operator"
-        >
-          -
-        </button>
+        <button type="button" value="4" class="number">4</button>
+        <button type="button" value="5" class="number">5</button>
+        <button type="button" value="6" class="number">6</button>
+        <button type="button" value="-" class="operator">-</button>
 
-        <button type="button" value="1" onclick="tambahAngka(this.value)">
-          1
-        </button>
-        <button type="button" value="2" onclick="tambahAngka(this.value)">
-          2
-        </button>
-        <button type="button" value="3" onclick="tambahAngka(this.value)">
-          3
-        </button>
-        <button
-          type="button"
-          value="+"
-          onclick="tambahoperator(this.value)"
-          class="operator"
-        >
-          +
-        </button>
+        <button type="button" value="1" class="number">1</button>
+        <button type="button" value="2" class="number">2</button>
+        <button type="button" value="3" class="number">3</button>
+        <button type="button" value="+" class="operator">+</button>
 
-        <button type="button" value="0" onclick="tambahAngka(this.value)">
-          0
-        </button>
-        <button type="button" value="00" onclick="tambahAngka(this.value)">
-          00
-        </button>
-        <button type="button" value="." onclick="tambahAngka(this.value)">
-          .
-        </button>
-
-        <button type="button" value="=" onclick="result()" class="operator">
-          =
-        </button>
+        <button type="button" value="0" class="number">0</button>
+        <button type="button" value="00" class="number">00</button>
+        <button type="button" value="." class="number">.</button>
+        <button type="button" value="=" class="calculate">=</button>
       </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
